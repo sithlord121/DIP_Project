@@ -56,7 +56,7 @@ disp(z)
 
 ft=fft(z)
 
-for p = 21:numel(ft)
+for p = 3:numel(ft)
 ft(p)=0
     
 end
