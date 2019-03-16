@@ -25,5 +25,6 @@ for i=1:K
 end
 
 D = alpha * D1 - beta * D2;
-A = (1-D) ^ (-1);
+I = eye(K);
+A = (I-D) ^ (-1);
 end
