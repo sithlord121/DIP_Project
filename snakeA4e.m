@@ -25,6 +25,7 @@ for i=1:K
 end
 
 D = alpha * D1 - beta * D2;
-I = eye(K);
-A = (I-D) ^ (-1);
+Iden = eye(K);
+%A = (Iden-D) ^ (-1);
+A=pinv(Iden-D);
 end
